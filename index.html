@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel</title>
+    
+    
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:beige;
+        }
+        .container{
+            padding: 30px;
+            background-color: burlywood;
+        }
+    </style>
+
+
+</head>
+<body>
+    <form>
+        <div>
+            <label for="text">Enter Firstname</label>
+            <input type="text" id="text"   minlength="4"   required>
+        </div>
+        <div>
+            <label for="text">Enter Middlename</label>
+            <input type="text" id="text"  minlength="4"   required>
+        </div>
+
+
+        <div>
+            <label for="text">Enter Lastname</label>
+            <input type="text" id="text"  minlength="4"   required>
+
+
+        <div>
+                <label for="email">Enter Email</label>
+                <input type="email" id="email"  pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+        </div>
+
+        <div>
+            <label for="number">Enter Phone Number</label>
+            (<input type="tel" id="first3" size="3"  maxlength="3"  onseeked="validation()" required> ) - <input type="tel" id="second3" size="3" onseeked="validation()" maxlength="3" required> - <input type="tel" id="lastdigits" size="4" onseeked="validation()" maxlength="4" required>
+        </div>
+       
+         
+        <div>
+             <input type="submit" class="button" value="Submit">
+        </div>
+    </form>
+          
+          
+   
+</body>
+<script>
+  function validation(){
+  var number=document.getElementById("first3").value;
+
+  if (621<number>799){
+   document.write("jio"); 
+  }else if(801<number> 920){
+    document.write("idea");
+
+  }else if(921<number> 999){
+    document.write("vodafone");
+  }else{
+    document.write("invalid number");
+  }
+  }
+
+</script>
+
+
+</html>
